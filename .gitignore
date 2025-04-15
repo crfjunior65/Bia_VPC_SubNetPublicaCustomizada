@@ -3,6 +3,7 @@
 
 aws-key-terraform.*
 aws-key-terraform
+TesteAWS_CLI
 *.out
 *.sh
 *.pem

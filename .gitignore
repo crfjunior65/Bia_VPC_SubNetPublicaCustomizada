@@ -1,6 +1,12 @@
 # Local .terraform directories
 **/.terraform/*
 
+aws-key-terraform.*
+aws-key-terraform
+*.out
+*.sh
+*.pem
+
 # .tfstate files
 *.tfstate
 *.tfstate.*

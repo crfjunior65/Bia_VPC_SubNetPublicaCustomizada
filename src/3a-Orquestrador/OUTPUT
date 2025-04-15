@@ -1,0 +1,338 @@
+EC2_bia_dev_sg_ids = toset([
+  "sg-0513fb8e206d2d390",
+])
+ami_amazon = {
+  "architecture" = "x86_64"
+  "arn" = "arn:aws:ec2:us-east-1::image/ami-0a38b8c18f189761a"
+  "block_device_mappings" = toset([
+    {
+      "device_name" = "/dev/xvda"
+      "ebs" = tomap({
+        "delete_on_termination" = "true"
+        "encrypted" = "false"
+        "iops" = "0"
+        "snapshot_id" = "snap-0695e02539ecdfb6a"
+        "throughput" = "0"
+        "volume_size" = "8"
+        "volume_type" = "gp2"
+      })
+      "no_device" = ""
+      "virtual_name" = ""
+    },
+  ])
+  "boot_mode" = ""
+  "creation_date" = "2025-04-05T01:42:19.000Z"
+  "deprecation_time" = "2025-07-04T01:42:00.000Z"
+  "description" = "Amazon Linux 2 AMI 2.0.20250405.0 x86_64 HVM gp2"
+  "ena_support" = true
+  "executable_users" = tolist(null) /* of string */
+  "filter" = toset([
+    {
+      "name" = "name"
+      "values" = toset([
+        "amzn2-ami-hvm-*-x86_64-gp2",
+      ])
+    },
+    {
+      "name" = "virtualization-type"
+      "values" = toset([
+        "hvm",
+      ])
+    },
+  ])
+  "hypervisor" = "xen"
+  "id" = "ami-0a38b8c18f189761a"
+  "image_id" = "ami-0a38b8c18f189761a"
+  "image_location" = "amazon/amzn2-ami-hvm-2.0.20250405.0-x86_64-gp2"
+  "image_owner_alias" = "amazon"
+  "image_type" = "machine"
+  "imds_support" = ""
+  "include_deprecated" = false
+  "kernel_id" = ""
+  "most_recent" = true
+  "name" = "amzn2-ami-hvm-2.0.20250405.0-x86_64-gp2"
+  "name_regex" = tostring(null)
+  "owner_id" = "137112412989"
+  "owners" = tolist([
+    "amazon",
+  ])
+  "platform" = ""
+  "platform_details" = "Linux/UNIX"
+  "product_codes" = toset([])
+  "public" = true
+  "ramdisk_id" = ""
+  "root_device_name" = "/dev/xvda"
+  "root_device_type" = "ebs"
+  "root_snapshot_id" = "snap-0695e02539ecdfb6a"
+  "sriov_net_support" = "simple"
+  "state" = "available"
+  "state_reason" = tomap({
+    "code" = "UNSET"
+    "message" = "UNSET"
+  })
+  "tags" = tomap({})
+  "timeouts" = null /* object */
+  "tpm_support" = ""
+  "usage_operation" = "RunInstances"
+  "virtualization_type" = "hvm"
+}
+ami_amazon_2023 = {
+  "architecture" = "x86_64"
+  "arn" = "arn:aws:ec2:us-east-1::image/ami-089146b56f5af20cf"
+  "block_device_mappings" = toset([
+    {
+      "device_name" = "/dev/xvda"
+      "ebs" = tomap({
+        "delete_on_termination" = "true"
+        "encrypted" = "false"
+        "iops" = "3000"
+        "snapshot_id" = "snap-05e153f9270149827"
+        "throughput" = "125"
+        "volume_size" = "30"
+        "volume_type" = "gp3"
+      })
+      "no_device" = ""
+      "virtual_name" = ""
+    },
+  ])
+  "boot_mode" = "uefi-preferred"
+  "creation_date" = "2025-04-03T22:36:22.000Z"
+  "deprecation_time" = "2027-04-03T22:36:22.000Z"
+  "description" = "Amazon Linux AMI 2023.0.20250403 x86_64 ECS HVM EBS"
+  "ena_support" = true
+  "executable_users" = tolist(null) /* of string */
+  "filter" = toset([
+    {
+      "name" = "architecture"
+      "values" = toset([
+        "x86_64",
+      ])
+    },
+    {
+      "name" = "name"
+      "values" = toset([
+        "al2023-ami-*-x86_64",
+      ])
+    },
+    {
+      "name" = "virtualization-type"
+      "values" = toset([
+        "hvm",
+      ])
+    },
+  ])
+  "hypervisor" = "xen"
+  "id" = "ami-089146b56f5af20cf"
+  "image_id" = "ami-089146b56f5af20cf"
+  "image_location" = "amazon/al2023-ami-ecs-neuron-hvm-2023.0.20250403-kernel-6.1-x86_64"
+  "image_owner_alias" = "amazon"
+  "image_type" = "machine"
+  "imds_support" = "v2.0"
+  "include_deprecated" = false
+  "kernel_id" = ""
+  "most_recent" = true
+  "name" = "al2023-ami-ecs-neuron-hvm-2023.0.20250403-kernel-6.1-x86_64"
+  "name_regex" = tostring(null)
+  "owner_id" = "591542846629"
+  "owners" = tolist([
+    "amazon",
+  ])
+  "platform" = ""
+  "platform_details" = "Linux/UNIX"
+  "product_codes" = toset([])
+  "public" = true
+  "ramdisk_id" = ""
+  "root_device_name" = "/dev/xvda"
+  "root_device_type" = "ebs"
+  "root_snapshot_id" = "snap-05e153f9270149827"
+  "sriov_net_support" = "simple"
+  "state" = "available"
+  "state_reason" = tomap({
+    "code" = "UNSET"
+    "message" = "UNSET"
+  })
+  "tags" = tomap({})
+  "timeouts" = null /* object */
+  "tpm_support" = ""
+  "usage_operation" = "RunInstances"
+  "virtualization_type" = "hvm"
+}
+ami_ubuntu = {
+  "architecture" = "x86_64"
+  "arn" = "arn:aws:ec2:us-east-1::image/ami-09eb231ad55c3963d"
+  "block_device_mappings" = toset([
+    {
+      "device_name" = "/dev/sda1"
+      "ebs" = tomap({
+        "delete_on_termination" = "true"
+        "encrypted" = "false"
+        "iops" = "0"
+        "snapshot_id" = "snap-08073b7233821dfb7"
+        "throughput" = "0"
+        "volume_size" = "8"
+        "volume_type" = "gp3"
+      })
+      "no_device" = ""
+      "virtual_name" = ""
+    },
+    {
+      "device_name" = "/dev/sdb"
+      "ebs" = tomap({})
+      "no_device" = ""
+      "virtual_name" = "ephemeral0"
+    },
+    {
+      "device_name" = "/dev/sdc"
+      "ebs" = tomap({})
+      "no_device" = ""
+      "virtual_name" = "ephemeral1"
+    },
+  ])
+  "boot_mode" = "uefi-preferred"
+  "creation_date" = "2025-04-01T10:39:26.000Z"
+  "deprecation_time" = "2027-04-01T10:39:26.000Z"
+  "description" = "Canonical, Ubuntu, 24.04, amd64 noble image"
+  "ena_support" = true
+  "executable_users" = tolist(null) /* of string */
+  "filter" = toset([
+    {
+      "name" = "name"
+      "values" = toset([
+        "ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-*",
+      ])
+    },
+    {
+      "name" = "virtualization-type"
+      "values" = toset([
+        "hvm",
+      ])
+    },
+  ])
+  "hypervisor" = "xen"
+  "id" = "ami-09eb231ad55c3963d"
+  "image_id" = "ami-09eb231ad55c3963d"
+  "image_location" = "amazon/ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20250401"
+  "image_owner_alias" = "amazon"
+  "image_type" = "machine"
+  "imds_support" = "v2.0"
+  "include_deprecated" = false
+  "kernel_id" = ""
+  "most_recent" = true
+  "name" = "ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20250401"
+  "name_regex" = tostring(null)
+  "owner_id" = "099720109477"
+  "owners" = tolist([
+    "099720109477",
+  ])
+  "platform" = ""
+  "platform_details" = "Linux/UNIX"
+  "product_codes" = toset([])
+  "public" = true
+  "ramdisk_id" = ""
+  "root_device_name" = "/dev/sda1"
+  "root_device_type" = "ebs"
+  "root_snapshot_id" = "snap-08073b7233821dfb7"
+  "sriov_net_support" = "simple"
+  "state" = "available"
+  "state_reason" = tomap({
+    "code" = "UNSET"
+    "message" = "UNSET"
+  })
+  "tags" = tomap({})
+  "timeouts" = null /* object */
+  "tpm_support" = ""
+  "usage_operation" = "RunInstances"
+  "virtualization_type" = "hvm"
+}
+ami_ubuntu_2204 = {
+  "architecture" = "x86_64"
+  "arn" = "arn:aws:ec2:us-east-1::image/ami-0655cec52acf2717b"
+  "block_device_mappings" = toset([
+    {
+      "device_name" = "/dev/sda1"
+      "ebs" = tomap({
+        "delete_on_termination" = "true"
+        "encrypted" = "false"
+        "iops" = "0"
+        "snapshot_id" = "snap-0ea0715c3204157c8"
+        "throughput" = "0"
+        "volume_size" = "8"
+        "volume_type" = "gp2"
+      })
+      "no_device" = ""
+      "virtual_name" = ""
+    },
+    {
+      "device_name" = "/dev/sdb"
+      "ebs" = tomap({})
+      "no_device" = ""
+      "virtual_name" = "ephemeral0"
+    },
+    {
+      "device_name" = "/dev/sdc"
+      "ebs" = tomap({})
+      "no_device" = ""
+      "virtual_name" = "ephemeral1"
+    },
+  ])
+  "boot_mode" = "uefi-preferred"
+  "creation_date" = "2025-03-27T06:52:03.000Z"
+  "deprecation_time" = "2027-03-27T06:52:03.000Z"
+  "description" = "Canonical, Ubuntu, 22.04, amd64 jammy image"
+  "ena_support" = true
+  "executable_users" = tolist(null) /* of string */
+  "filter" = toset([
+    {
+      "name" = "name"
+      "values" = toset([
+        "ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*",
+      ])
+    },
+    {
+      "name" = "virtualization-type"
+      "values" = toset([
+        "hvm",
+      ])
+    },
+  ])
+  "hypervisor" = "xen"
+  "id" = "ami-0655cec52acf2717b"
+  "image_id" = "ami-0655cec52acf2717b"
+  "image_location" = "amazon/ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20250327"
+  "image_owner_alias" = "amazon"
+  "image_type" = "machine"
+  "imds_support" = ""
+  "include_deprecated" = false
+  "kernel_id" = ""
+  "most_recent" = true
+  "name" = "ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20250327"
+  "name_regex" = tostring(null)
+  "owner_id" = "099720109477"
+  "owners" = tolist([
+    "099720109477",
+  ])
+  "platform" = ""
+  "platform_details" = "Linux/UNIX"
+  "product_codes" = toset([])
+  "public" = true
+  "ramdisk_id" = ""
+  "root_device_name" = "/dev/sda1"
+  "root_device_type" = "ebs"
+  "root_snapshot_id" = "snap-0ea0715c3204157c8"
+  "sriov_net_support" = "simple"
+  "state" = "available"
+  "state_reason" = tomap({
+    "code" = "UNSET"
+    "message" = "UNSET"
+  })
+  "tags" = tomap({})
+  "timeouts" = null /* object */
+  "tpm_support" = ""
+  "usage_operation" = "RunInstances"
+  "virtualization_type" = "hvm"
+}
+autor = "Junior Fernandes"
+cliente = "BIA"
+projeto = "Formacao AWS"
+regiao = "us-east-1"
+shortnameid = "bia"

@@ -9,7 +9,7 @@ Teste*
 *.out
 *.sh
 *.pem
-
+.pre-commit-config.yaml
 # .tfstate files
 *.tfstate
 *.tfstate.*

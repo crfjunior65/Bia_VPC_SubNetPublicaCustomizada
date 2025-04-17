@@ -5,14 +5,23 @@ module "vpc" {
   name    = "Formacao_AWS-vpc"
   cidr    = "10.20.0.0/16"
 
-  azs              = ["us-east-1a", "us-east-1b"]
-  private_subnets  = ["10.20.201.0/24", "10.20.202.0/24"]
-  public_subnets   = ["10.20.101.0/24", "10.20.102.0/24"]
-  database_subnets = ["10.20.21.0/24", "10.20.22.0/24"]
+  azs = ["us-east-1a", "us-east-1b"]
+
+  public_subnets      = ["10.20.101.0/24", "10.20.102.0/24"]
+  public_subnet_names = ["SubNet-publica-1a", "SubNet-publica-1b"]
+
+  private_subnets      = ["10.20.201.0/24", "10.20.202.0/24"]
+  private_subnet_names = ["SubNet-privada-1a", "SubNet-privada-1b"]
+
+  database_subnets      = ["10.20.21.0/24", "10.20.22.0/24"]
+  database_subnet_names = ["SubNet-DataBase-1a", "SubNet-DataBase-1b"]
+
   #assign_generated_ipv6_cidr_block = true
+
   create_database_subnet_group       = true # var.create_database_subnet_group
   create_database_subnet_route_table = true # var.create_database_subnet_route_table
   create_igw                         = true
+
   #lifecycle {
   #  prevent_destroy = true
   #}
@@ -25,9 +34,9 @@ module "vpc" {
   ##reuse_nat_ips = true
   #external_nat_ip_ids = "${aws_eip.nat.*.id}"
   ##manage_default_network_acl = true
-
+  /*
   public_subnet_tags = {
-    Name = "SubNet-public"
+    Name = "SubNet-publica"
   }
 
   private_subnet_tags = {
@@ -37,6 +46,7 @@ module "vpc" {
   database_subnet_tags = {
     Name = "SubNet-DataBase"
   }
+*/
 
   tags = {
     Terraform   = "true"

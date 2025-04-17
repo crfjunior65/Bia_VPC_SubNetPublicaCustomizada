@@ -1,7 +1,7 @@
 data "terraform_remote_state" "vpc" {
   backend = "s3"
   config = {
-    bucket = "crfjunior-terraform-state-bia"
+    bucket = "crfjunior-terraform"
     key    = "vpc/terraform.tfstate"
     #key    = "RemoteState/vpc/terraform.tfstate"
     #bucket = "terraform-state-prod"

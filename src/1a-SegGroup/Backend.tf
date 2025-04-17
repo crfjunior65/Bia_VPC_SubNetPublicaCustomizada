@@ -5,7 +5,7 @@ variable "environment" {
 
 terraform {
   backend "s3" {
-    bucket = "crfjunior-terraform-state-bia"
+    bucket = "crfjunior-terraform"
     key    = "sg/terraform.tfstate"
     region = "us-east-1"
     #dynamodb_table = "meu-lock-dynamodb"  # Para locking

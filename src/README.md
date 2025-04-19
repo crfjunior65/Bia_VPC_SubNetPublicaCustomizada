@@ -1,4 +1,3 @@
-# Bia_VPC_SubNetPublicaCustomizada
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
